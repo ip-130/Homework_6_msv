@@ -84,22 +84,22 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public void onClick(View v) {
-        fragmentTransaction = getFragmentManager().beginTransaction();
-        switch (v.getId()) {
-            case R.id.btnAdd:
-                fragmentTransaction.add(R.id.frgmCont, fragment1);
-                break;
-            case R.id.btnRemove:
-                fragmentTransaction.remove(fragment1);
-                break;
-            case R.id.btnReplace:
-                fragmentTransaction.replace(R.id.frgmCont, fragment2);
-            default:
-                break;
-        }
-        if (chbStack.isChecked()) fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-    }
+//    public void onClick(View v) {
+//        fragmentTransaction = getFragmentManager().beginTransaction();
+//        switch (v.getId()) {
+//            case R.id.btnAdd:
+//                fragmentTransaction.add(R.id.frgmCont, fragment1);
+//                break;
+//            case R.id.btnRemove:
+//                fragmentTransaction.remove(fragment1);
+//                break;
+//            case R.id.btnReplace:
+//                fragmentTransaction.replace(R.id.frgmCont, fragment2);
+//            default:
+//                break;
+//        }
+//        if (chbStack.isChecked()) fragmentTransaction.addToBackStack(null);
+//        fragmentTransaction.commit();
+//    }
 
 }
