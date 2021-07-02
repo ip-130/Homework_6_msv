@@ -3,9 +3,9 @@ package com.google.homework_6_msv;
 import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.DatePickerDialog;
-import android.app.FragmentTransaction;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.text.format.DateUtils;
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void onClick(View v) {
-        fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction = getSupportFragmentManager().beginTransaction();
         switch (v.getId()) {
             case R.id.btnAdd:
                 fragmentTransaction.add(R.id.frgmCont, fragment1);
